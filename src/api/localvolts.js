@@ -6,7 +6,7 @@ const PARTNER_ID = '7863';
 
 // 🌐 Base API endpoint and version
 const axiosInstance = axios.create({
-  baseURL: '/api', // Proxies to https://api.localvolts.com/v1
+  baseURL: 'https://api.localvolts.com/v1', // Direct API endpoint
   headers: {
     Authorization: `apikey ${API_KEY}`,
     partner: PARTNER_ID,
