@@ -1,10 +1,8 @@
 import axios from 'axios';
 
-// 🔐 Credentials (from API Guide - use your own if given)
-const API_KEY = '05eb3badd072de87926216b6ef83071f';
-const PARTNER_ID = '7863';
+const API_KEY = process.env.REACT_APP_API_KEY;
+const PARTNER_ID = process.env.REACT_APP_PARTNER_ID;
 
-// 🌐 Base API endpoint and version
 const axiosInstance = axios.create({
   baseURL: '/api', // Proxies to https://api.localvolts.com/v1
   headers: {
@@ -13,8 +11,6 @@ const axiosInstance = axios.create({
     'Content-Type': 'application/json',
   },
 });
-
-
 
 /**
  * Fetches the most recent 5-minute energy interval data.
