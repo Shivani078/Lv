@@ -1,8 +1,7 @@
 import axios from 'axios';
 
 // 🔐 Credentials (from API Guide - use your own if given)
-const API_KEY = '05eb3badd072de87926216b6ef83071f';
-const PARTNER_ID = '7863';
+const API_KEY = '
 
 // 🌐 Base API endpoint and version
 const axiosInstance = axios.create({
